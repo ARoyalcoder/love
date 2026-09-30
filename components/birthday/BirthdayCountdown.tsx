@@ -59,16 +59,20 @@ export function BirthdayCountdown() {
           <div className="space-y-4">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-500/20 border border-rose-400/30 text-rose-300 text-xs sm:text-sm font-medium">
               <PartyPopper size={16} className="text-amber-400" />
-              <span>Today is The Grand Day!</span>
+              <span>Today is The 20th Birthday Celebration! (01/10/2006 – 01/10/2026)</span>
               <Sparkles size={14} className="text-amber-300" />
             </div>
 
             <h3 className="font-serif text-2xl sm:text-4xl font-bold text-amber-200">
-              Happy Birthday, {BIRTHDAY_CONFIG.birthdayGirl.firstName}! 🎂
+              Happy 20th Birthday, {BIRTHDAY_CONFIG.birthdayGirl.firstName}! 🎂
             </h3>
 
+            <p className="font-serif italic text-lg sm:text-2xl text-amber-300 font-medium">
+              “{BIRTHDAY_CONFIG.bhojpuriMilestone}”
+            </p>
+
             <p className="text-rose-100/90 font-serif italic text-base sm:text-lg max-w-xl mx-auto">
-              “Today isn't about counting down anymore… Today is about celebrating YOU.”
+              “01 अक्टूबर 2006 के एगो नन्ही परी धरती पर अइली, आ आज उहे हमार जिगरी 20 बछर के हो गइली। भगवान तोहार हर डगर में फूल बिछा देवे!”
             </p>
 
             <div className="flex items-center justify-center gap-2 text-rose-300 font-handwriting text-2xl pt-2">

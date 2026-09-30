@@ -129,7 +129,7 @@ export function InteractiveCake() {
         </div>
 
         {/* Cake Tier 1 (Top Tier) */}
-        <div className="relative w-44 sm:w-56 h-16 rounded-t-3xl bg-gradient-to-b from-rose-200 via-rose-100 to-amber-50 border-t-4 border-rose-300/80 shadow-lg flex items-center justify-center overflow-hidden">
+        <div className="relative w-48 sm:w-60 h-16 rounded-t-3xl bg-gradient-to-b from-rose-200 via-rose-100 to-amber-50 border-t-4 border-rose-300/80 shadow-lg flex items-center justify-center overflow-hidden">
           {/* Dripping frosting effect */}
           <div className="absolute top-0 inset-x-0 flex justify-around text-rose-300/70 text-sm">
             <span>●</span>
@@ -139,25 +139,30 @@ export function InteractiveCake() {
             <span>●</span>
           </div>
           {/* Name banner on cake */}
-          <div className="px-3 py-1 rounded-full bg-rose-400/20 border border-rose-400/40 text-rose-900 font-serif font-bold text-xs tracking-wider uppercase">
-            Arti Singh ❤️
+          <div className="flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-rose-500/20 border border-rose-400/50 text-rose-950 font-serif font-bold text-xs tracking-wider uppercase shadow-sm">
+            <span>Arti Singh</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
+            <span className="text-rose-900 font-extrabold text-sm">20</span>
           </div>
         </div>
 
         {/* Cake Tier 2 (Base Tier) */}
-        <div className="relative w-56 sm:w-72 h-20 rounded-t-2xl bg-gradient-to-b from-amber-50 via-peach-100 to-rose-200 border-t-4 border-amber-300/80 shadow-2xl flex items-center justify-center">
+        <div className="relative w-60 sm:w-76 h-20 rounded-t-2xl bg-gradient-to-b from-amber-50 via-peach-100 to-rose-200 border-t-4 border-amber-300/80 shadow-2xl flex flex-col items-center justify-center">
           {/* Decorative sugar pearls */}
           <div className="absolute bottom-2 inset-x-4 flex justify-between text-amber-500/80 text-xs">
             <span>✦</span>
             <span>🌸</span>
             <span>✦</span>
-            <span>🌸</span>
+            <span>🎂</span>
             <span>✦</span>
             <span>🌸</span>
             <span>✦</span>
           </div>
-          <p className="font-handwriting text-xl text-rose-800/90 font-semibold tracking-wide">
-            Forever 20s & Beautiful
+          <p className="font-handwriting text-2xl text-rose-900 font-bold tracking-wide">
+            20 Years of Radiance
+          </p>
+          <p className="text-[10px] text-zinc-600 font-mono tracking-widest uppercase">
+            01 / 10 / 2006 — 01 / 10 / 2026
           </p>
         </div>
 
