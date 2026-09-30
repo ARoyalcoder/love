@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: "Plus Jakarta Sans", sans-serif;
+    --font-serif: "Playfair Display", Georgia, serif;
+    --font-handwriting: "Caveat", cursive;
+  }
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-handwriting {
+  font-family: var(--font-handwriting);
+}
+
+/* Subtle film grain & paper texture overlays */
+.film-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.paper-texture {
+  background-color: #fdfaf6;
+  background-image: 
+    radial-gradient(#eedcc9 0.75px, transparent 0.75px),
+    radial-gradient(#eedcc9 0.75px, #fdfaf6 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.dark-paper-texture {
+  background-color: #121324;
+  background-image: 
+    radial-gradient(rgba(244, 211, 169, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Warm glow filters and lighting */
+.gold-glow {
+  text-shadow: 0 0 20px rgba(251, 191, 36, 0.5), 0 0 40px rgba(245, 158, 11, 0.3);
+}
+
+.rose-glow {
+  text-shadow: 0 0 20px rgba(244, 114, 182, 0.5), 0 0 40px rgba(225, 29, 72, 0.3);
+}
+
+.box-gold-glow {
+  box-shadow: 0 0 30px rgba(245, 158, 11, 0.25), 0 0 60px rgba(245, 158, 11, 0.15);
+}
+
+.box-rose-glow {
+  box-shadow: 0 0 30px rgba(244, 114, 182, 0.25), 0 0 60px rgba(225, 29, 72, 0.15);
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090a12;
+}
+::-webkit-scrollbar-thumb {
+  background: #3f2a3a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f43f5e;
+}
+
+/* Keyframe animations */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes fireflyWiggle {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(10px, -15px);
+  }
+  50% {
+    transform: translate(-8px, -25px);
+  }
+  75% {
+    transform: translate(12px, -8px);
+  }
+}
+
+@keyframes petalFall {
+  0% {
+    transform: translateY(-10vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(105vh) translateX(60px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.animate-firefly {
+  animation: fireflyWiggle 8s ease-in-out infinite;
+}
+
+/* Polaroid tape & shadow styling */
+.polaroid-tape {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 22px;
+  background-color: rgba(254, 240, 138, 0.45);
+  backdrop-filter: blur(2px);
+  border: 1px dashed rgba(202, 138, 4, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
